@@ -11,6 +11,8 @@ import Settings from './pages/Settings'
 import Profile from './pages/Profile'
 import Faq from './pages/Faq'
 import ContactUs from './pages/ContactUs'
+import AddFaq from './pages/AddFaq'
+import EditFaq from './pages/EditFaq'
 
 export default function App() {
   return (
@@ -28,12 +30,10 @@ export default function App() {
           <Route index element={<Navigate to="/dashboard" replace />} />
           <Route path="dashboard" element={<Dashboard />} />
           <Route path="profile" element={<Profile />} />
-          <Route path="faq" element={<Faq />} />
           <Route path="contact" element={<ContactUs />} />
-          {/* <Route path="users" element={<Users />} /> */}
-          {/* <Route path="analytics" element={<Analytics />} /> */}
-          {/* <Route path="products" element={<Products />} /> */}
-          {/* <Route path="settings" element={<Settings />} /> */}
+          <Route path="faq" element={<Faq />} />
+          <Route path="add-faq" element={<AddFaq />} />
+          <Route path="edit-faq/:id" element={<EditFaq />} />
         </Route>
         <Route path="*" element={<Navigate to="/dashboard" replace />} />
       </Routes>
