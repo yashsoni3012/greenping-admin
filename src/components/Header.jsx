@@ -4,10 +4,12 @@ import { useLocation } from 'react-router-dom'
 
 const PAGE_TITLES = {
   '/dashboard': 'Dashboard',
-  '/users':     'Users',
-  '/analytics': 'Analytics',
-  '/products':  'Products',
+  // '/users':     'Users',
+  // '/analytics': 'Analytics',
+  // '/products':  'Products',
   '/profile':  'My Profile',
+  '/faq':  'FAQ',
+  '/contact':  'Contact Us',
   // '/settings':  'Settings',
 }
 
