@@ -7,7 +7,8 @@ const PAGE_TITLES = {
   '/users':     'Users',
   '/analytics': 'Analytics',
   '/products':  'Products',
-  '/settings':  'Settings',
+  '/profile':  'My Profile',
+  // '/settings':  'Settings',
 }
 
 export default function Header({ onMenuClick }) {
@@ -39,7 +40,7 @@ export default function Header({ onMenuClick }) {
       </div>
 
       {/* Right */}
-      <div className="flex items-center gap-2">
+      {/* <div className="flex items-center gap-2">
         <button className="relative p-2 rounded-xl hover:bg-slate-100 text-slate-500 transition-colors">
           <Bell size={18} />
           <span className="absolute top-1.5 right-1.5 w-2 h-2 bg-primary-500 rounded-full border-2 border-white" />
@@ -50,7 +51,7 @@ export default function Header({ onMenuClick }) {
         <div className="w-8 h-8 rounded-full bg-primary-600 flex items-center justify-center text-white font-bold text-xs ml-1 cursor-pointer hover:bg-primary-700 transition-colors">
           {user?.initials}
         </div>
-      </div>
+      </div> */}
     </header>
   )
 }

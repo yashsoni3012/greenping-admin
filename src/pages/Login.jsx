@@ -647,51 +647,7 @@ export default function Login() {
   return (
     <div className="min-h-screen flex">
       {/* Left panel (unchanged) */}
-      <div className="hidden lg:flex lg:w-1/2 bg-gradient-to-br from-primary-900 via-primary-800 to-primary-600 flex-col justify-between p-12 relative overflow-hidden">
-        <div className="absolute -top-20 -left-20 w-72 h-72 bg-white/5 rounded-full" />
-        <div className="absolute -bottom-16 -right-16 w-80 h-80 bg-white/5 rounded-full" />
-        <div className="absolute top-1/2 left-1/2 -translate-x-1/2 -translate-y-1/2 w-96 h-96 bg-white/3 rounded-full" />
-
-        <div className="relative">
-          <div className="flex items-center gap-3">
-            <div className="w-10 h-10 bg-white/20 rounded-xl flex items-center justify-center">
-              <Leaf size={22} className="text-white" />
-            </div>
-            <span className="text-white text-2xl font-bold">GreenAdmin</span>
-          </div>
-        </div>
-
-        <div className="relative space-y-6">
-          <div className="space-y-2">
-            <h2 className="text-white text-4xl font-extrabold leading-tight">
-              Manage your
-              <br />
-              business smarter
-            </h2>
-            <p className="text-primary-200 text-lg">
-              A powerful, beautiful admin dashboard built for modern teams.
-            </p>
-          </div>
-
-          <div className="grid grid-cols-2 gap-4 max-w-sm">
-            {[
-              { value: "24K+", label: "Active Users" },
-              { value: "98%", label: "Uptime" },
-              { value: "$1.2M", label: "Revenue" },
-              { value: "340+", label: "Products" },
-            ].map((stat) => (
-              <div key={stat.label} className="bg-white/10 rounded-2xl p-4">
-                <p className="text-white text-2xl font-bold">{stat.value}</p>
-                <p className="text-primary-200 text-sm mt-0.5">{stat.label}</p>
-              </div>
-            ))}
-          </div>
-        </div>
-
-        <p className="relative text-primary-300 text-sm">
-          © {new Date().getFullYear()} GreenAdmin. All rights reserved.
-        </p>
-      </div>
+      
 
       {/* Right panel */}
       <div className="flex-1 flex items-center justify-center p-6 sm:p-12 bg-slate-50">
