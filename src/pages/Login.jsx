@@ -111,7 +111,7 @@ export default function Login() {
 
     setLoading(true);
     try {
-      const response = await api.post("/admin-forgot-password/", {
+      const response = await api.post("/admin_forgot-password/", {
         email: forgotEmail,
       });
       console.log("Send OTP response:", response.data);
@@ -151,7 +151,7 @@ export default function Login() {
 
     setLoading(true);
     try {
-      const response = await api.patch("/admin-forgot-password/", {
+      const response = await api.patch("/admin_forgot-password/", {
         email: forgotEmail,
         otp: otp,
         new_password: newPassword,

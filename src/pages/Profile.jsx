@@ -106,7 +106,7 @@ export default function Profile() {
     fetchProfile();
   }, []);
 
-  // ---------- Reset Password using /admin-reset-password/ ----------
+  // ---------- Reset Password using /admin_reset-password/ ----------
   const handleResetPassword = async (e) => {
     e.preventDefault();
     setResetError("");
@@ -139,14 +139,14 @@ export default function Profile() {
         return;
       }
 
-      console.log("Attempting password reset via /admin-reset-password/");
+      console.log("Attempting password reset via /admin_reset-password/");
 
       // Try both common field name patterns
       let response;
       try {
         // Try with old_password / new_password
         response = await api.patch(
-          "/admin-reset-password/",
+          "/admin_reset-password/",
           {
             old_password: passwordForm.currentPassword,
             new_password: passwordForm.newPassword,
